@@ -8,6 +8,7 @@ DEFAULT_DEPTH_LIMIT = 50
 class DFS(BaseSearch):
 
     def __init__(self, depth_limit: int = DEFAULT_DEPTH_LIMIT):
+<<<<<<< HEAD
         if depth_limit < 0:
             raise ValueError("O limite de profundidade não pode ser negativo.")
         self.depth_limit = depth_limit
@@ -54,3 +55,10 @@ class DFS(BaseSearch):
             nodes_generated=nodes_generated,
             max_frontier_size=max_frontier_size,
         )
+=======
+        self.depth_limit = depth_limit
+
+    def search(self, initial: State) -> SearchResult:
+        # TODO: implemente a DFS aqui
+        raise NotImplementedError("Implemente o método search na classe DFS.")
+>>>>>>> e3d78295ec14166dfc6fdeadf55f6ce53772a4c1

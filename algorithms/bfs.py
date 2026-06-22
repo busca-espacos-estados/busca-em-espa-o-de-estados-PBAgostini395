@@ -7,6 +7,7 @@ from puzzle.result import SearchResult
 class BFS(BaseSearch):
 
     def search(self, initial: State) -> SearchResult:
+<<<<<<< HEAD
         frontier = deque([initial])
         visited = {initial.tiles}
         nodes_expanded = 0
@@ -43,3 +44,7 @@ class BFS(BaseSearch):
             nodes_generated=nodes_generated,
             max_frontier_size=max_frontier_size,
         )
+=======
+        # TODO: implemente a BFS aqui
+        raise NotImplementedError("Implemente o método search na classe BFS.")
+>>>>>>> e3d78295ec14166dfc6fdeadf55f6ce53772a4c1

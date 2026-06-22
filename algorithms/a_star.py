@@ -1,13 +1,19 @@
 import heapq
+<<<<<<< HEAD
 from itertools import count
 from puzzle.base_search import BaseSearch
 from puzzle.state import GOAL_STATE, State
+=======
+from puzzle.base_search import BaseSearch
+from puzzle.state import State
+>>>>>>> e3d78295ec14166dfc6fdeadf55f6ce53772a4c1
 from puzzle.result import SearchResult
 
 
 class AStar(BaseSearch):
 
     def heuristic(self, state: State) -> int:
+<<<<<<< HEAD
         """Calcula a distância de Manhattan, ignorando o espaço vazio."""
         goal_positions = {
             tile: divmod(index, 3)
@@ -71,3 +77,11 @@ class AStar(BaseSearch):
             nodes_generated=nodes_generated,
             max_frontier_size=max_frontier_size,
         )
+=======
+        # TODO: implemente a heurística aqui
+        raise NotImplementedError
+
+    def search(self, initial: State) -> SearchResult:
+        # TODO: implemente o A* aqui
+        raise NotImplementedError
+>>>>>>> e3d78295ec14166dfc6fdeadf55f6ce53772a4c1
